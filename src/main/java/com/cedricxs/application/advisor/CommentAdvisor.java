@@ -15,13 +15,13 @@ import org.springframework.web.servlet.ModelAndView;
 @ControllerAdvice
 public class CommentAdvisor {
 
-    @ExceptionHandler(RepositoryException.class)
-    public ModelAndView repositoryExceptionHandler(RepositoryException repositoryException) {
-        log.error("Repository Exception caught.", repositoryException);
-        ModelAndView modelAndView = new ModelAndView();
-        modelAndView.setStatus(HttpStatus.BAD_REQUEST);
-        modelAndView.setViewName("error");
-        return modelAndView;
-    }
+//    @ExceptionHandler(RepositoryException.class)
+//    public ModelAndView repositoryExceptionHandler(RepositoryException repositoryException) {
+//        log.error("Repository Exception caught.", repositoryException);
+//        ModelAndView modelAndView = new ModelAndView();
+//        modelAndView.setStatus(HttpStatus.BAD_REQUEST);
+//        modelAndView.setViewName("error");
+//        return modelAndView;
+//    }
 
 }

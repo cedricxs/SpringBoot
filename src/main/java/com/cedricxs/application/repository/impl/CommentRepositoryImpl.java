@@ -6,6 +6,7 @@ import com.cedricxs.application.po.CommentPO;
 import com.cedricxs.application.repository.CommentRepository;
 import com.cedricxs.application.utils.RedisKeyBuilder;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Repository;
 import org.thymeleaf.expression.Lists;
 
@@ -21,6 +22,7 @@ import java.util.stream.Collectors;
  */
 @Slf4j
 @Repository
+@Profile("dev")
 public class CommentRepositoryImpl implements CommentRepository {
 
     @Resource

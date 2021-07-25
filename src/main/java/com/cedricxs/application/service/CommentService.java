@@ -10,10 +10,12 @@ import com.cedricxs.application.exception.RepositoryException;
  * @date 2021/07/10
  */
 public interface CommentService {
+
     /**
      * 添加评论
      * @param addCommentBO
      * @return
+     * @throws RepositoryException
      */
     AddCommentResultDTO addComment(AddCommentBO addCommentBO) throws RepositoryException;
 

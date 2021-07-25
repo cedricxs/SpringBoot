@@ -25,5 +25,8 @@ public class MainController {
         return "generic";
     }
 
-
+    @GetMapping(path = "/addproduct")
+    public String addProductPage() {
+        return "addProduct";
+    }
 }
